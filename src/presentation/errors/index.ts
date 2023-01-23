@@ -1,3 +1,3 @@
-export * from './invalidParamError'
-export * from './missingParamError'
-export * from './serverError'
+export * from './invalid-param-error'
+export * from './missing-param-error'
+export * from './server-error'

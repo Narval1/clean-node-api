@@ -1,5 +1,5 @@
-import { SignUpController } from './singup'
-import { AddAccount, AddAccountModel, EmailValidator, AccountModel } from './singUpProtocols'
+import { SignUpController } from './signup'
+import { AddAccount, AddAccountModel, EmailValidator, AccountModel } from './signup-protocols'
 import { MissingParamError, InvalidParamError, ServerError } from '../../errors'
 
 interface SutTypes {
