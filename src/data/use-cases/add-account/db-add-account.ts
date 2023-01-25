@@ -14,7 +14,7 @@ export class DbAddAccount implements AddAccount {
     // ensure this is a deep clone
     const account = JSON.parse(JSON.stringify(accountData))
     account.password = hashedPassword
-    await this._addAccountRepository.add(account)
-    return await new Promise(resolve => { resolve(null) })
+    const returnData = await this._addAccountRepository.add(account)
+    return await new Promise(resolve => { resolve(returnData) })
   }
 }
