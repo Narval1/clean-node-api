@@ -180,7 +180,7 @@ describe('SignUp Controller', () => {
     })
   })
 
-  test('should call AddAccount with correct values', async () => {
+  test('should return 500 AddAccount throws an error', async () => {
     const { sut, addAccountStub } = makeSut()
     jest.spyOn(addAccountStub, 'add').mockImplementationOnce(async () => {
       return await new Promise((resolve, reject) => { reject(new Error()) })
